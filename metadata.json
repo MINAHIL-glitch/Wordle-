@@ -1,0 +1,6 @@
+{
+  "name": "WordCraft",
+  "description": "Tactile and luminous daily word puzzle game featuring streak rewards, tactical in-round boosters, league leaderboards, and live Word Duel modes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

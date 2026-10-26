@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#0b1326;color:#dae2fd;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-surface": "#dae2fd", "surface": "#0b1326", "primary-fixed-dim": "#4edea3", "background": "#0b1326", "surface-container-highest": "#2d3449", "on-primary-fixed-variant": "#005236", "on-tertiary-container": "#1d17b2", "on-error-container": "#ffdad6", "surface-variant": "#2d3449", "tertiary-fixed": "#e1e0ff", "tile-border": "#475569", "tile-absent": "#334155", "inverse-primary": "#006c49", "surface-container-high": "#222a3d", "primary-container": "#10b981", "on-primary": "#003824", "on-tertiary-fixed-variant": "#2f2ebe", "surface-container": "#171f33", "outline": "#86948a", "inverse-on-surface": "#283044", "on-surface": "#dae2fd", "tertiary": "#c0c1ff", "error": "#ffb4ab", "key-bg": "#334155", "secondary-fixed": "#ffddb8", "on-secondary-fixed-variant": "#653e00", "surface-container-lowest": "#060e20", "surface-dim": "#0b1326", "on-primary-fixed": "#002113", "surface-bright": "#31394d", "on-tertiary": "#1000a9", "tertiary-container": "#9699ff", "on-primary-container": "#00422b", "on-surface-variant": "#bbcabf", "on-error": "#690005", "surface-tint": "#4edea3", "tile-empty": "#1E293B", "tile-correct": "#10B981", "on-background": "#dae2fd", "surface-container-low": "#131b2e", "candy-pink": "#EC4899", "on-secondary": "#472a00", "secondary-container": "#ee9800", "glow-success": "#34D399", "primary": "#4edea3", "on-tertiary-fixed": "#07006c", "error-container": "#93000a", "primary-fixed": "#6ffbbe", "tertiary-fixed-dim": "#c0c1ff", "on-secondary-container": "#5b3800", "secondary-fixed-dim": "#ffb95f", "on-secondary-fixed": "#2a1700", "surface-card": "#1E293B", "outline-variant": "#3c4a42", "secondary": "#ffb95f", "tile-present": "#F59E0B" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-desktop": "2.5rem", "space-xs": "0.25rem", "space-lg": "1.25rem", "space-xl": "2rem", "margin": "1rem", "space-md": "0.75rem", "space-sm": "0.5rem", "gutter": "0.75rem" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "tile-letter": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"], "keyboard-letter": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["18px", { "lineHeight": "26px", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "label-md": ["14px", { "lineHeight": "18px", "letterSpacing": "0.05em", "fontWeight": "700" }], "tile-letter": ["32px", { "lineHeight": "32px", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "800" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "keyboard-letter": ["16px", { "lineHeight": "20px", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.3)]"><div class="h-16 px-space-md flex items-center justify-between gap-space-sm max-w-[480px] mx-auto"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="WordCraft Game Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf9hX5C0TK5W3q7AQrpo1IwCf-7h5mBu43X2nsH1S2tPaBVtTBuf-17-Lh-f-JMw_utcvMBf-FWNd1gaCzhk3fuGC8v8eu0jprndcwhuVnaYCKJiKNVT2rJe7p5MiEfdyQANc0k_pljA5gkbIsOs7ciQv-cpGl-FjQP9FBkb7siyXUJ9Y4Xz0NsPhC8zUSLF37kCX5ot-5-oZgfL-i7r6xUhQV3n3weHGuPspgxqs"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate leading-none">WordCraft</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate uppercase tracking-wider">Daily</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><div class="flex items-center gap-1 bg-surface-container px-space-sm py-1 rounded-full shadow-[0_2px_8px_rgba(245,158,11,0.15)]"><span class="material-symbols-outlined text-secondary text-[18px]">local_fire_department</span><span class="font-label-md text-label-md text-secondary">7</span></div><div class="flex items-center gap-1 bg-surface-container-high px-space-sm py-1 rounded-full shadow-[0_0_10px_rgba(255,185,95,0.25)]"><span class="material-symbols-outlined text-secondary text-[18px]">monetization_on</span><span class="font-label-md text-label-md text-on-surface">480</span></div><div class="flex items-center justify-center p-0.5 rounded-full bg-surface-container-high shadow-[0_2px_8px_rgba(0,0,0,0.3)] ml-0.5"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeL9j3bg0vum77GjSsjPCeyNWMJIMKyAUJUOwUvmP7PhNsWjbakagKZpFdYGWbKCKwpxXIM4A4v3YGMAMPn4Xa3o7DmXpEjBWmG1tYjbHmwWiU598c0YWpZthgDmSyPVcwTCMLl8kVCHD6w0BDy6KBjh1Gp3MsfoHE76yN7PYcT9vSHutqG-onGvDRPHpnOzmbee-7_9hPzEadeKCGZy7PgQOVFOvHonT2a_G3-eQ"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface max-w-[480px] mx-auto"><div class="flex flex-col w-full px-space-md py-space-sm gap-space-lg select-none">
+<!-- Top Hero Streak & Reward Card -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high p-space-md shadow-xl">
+<div class="absolute -right-12 -top-12 w-44 h-44 rounded-full bg-gradient-to-br from-secondary/20 via-primary/10 to-transparent blur-2xl pointer-events-none"></div>
+<div class="absolute -left-10 -bottom-10 w-36 h-36 rounded-full bg-candy-pink/10 blur-xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<!-- Streak Banner & Badge Row -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center shadow-[0_0_16px_rgba(245,158,11,0.3)]">
+<span class="material-symbols-outlined text-secondary text-[30px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Unstoppable Heat</span>
+<div class="flex items-center gap-1">
+<span class="font-headline-md text-headline-md text-secondary">24 Days</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Streak!</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm shadow-[0_0_12px_rgba(245,158,11,0.25)] flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">shield</span> Tier IV
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Multiplier 1.5x</span>
+</div>
+</div>
+<!-- Monthly Ring & Mystery Reward Split Bento -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<!-- Monthly Completion Progress Ring Card -->
+<div class="flex items-center gap-space-sm bg-surface-container-low p-space-sm rounded-xl">
+<div class="relative w-14 h-14 flex-shrink-0 flex items-center justify-center">
+<svg class="w-14 h-14 -rotate-90" viewbox="0 0 48 48">
+<circle class="text-surface-container-highest" cx="24" cy="24" fill="none" r="18" stroke="currentColor" stroke-width="4.5"></circle>
+<circle class="text-primary" cx="24" cy="24" fill="none" r="18" stroke="currentColor" stroke-dasharray="113.1" stroke-dashoffset="28.27" stroke-linecap="round" stroke-width="4.5"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-label-md text-label-md text-primary leading-none font-extrabold">75%</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Monthly Goal</span>
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">21 / 28 Done</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-0.5">+4 to Master</span>
+</div>
+</div>
+<!-- Mystery Chest Unlocking Card -->
+<div class="relative bg-surface-container-low p-space-sm rounded-xl flex items-center gap-space-sm overflow-hidden group">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center relative flex-shrink-0 shadow-[0_0_16px_rgba(255,185,95,0.2)]">
+<span class="material-symbols-outlined text-secondary text-[26px]" style="font-variation-settings: 'FILL' 1;">lock_open</span>
+<span class="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-candy-pink shadow-[0_0_8px_rgba(236,72,153,0.8)]"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold truncate">Chest at 25</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold">1 Day Left!</span>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">alarm</span>
+<span class="font-mono" id="chest-timer">14:28:40</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Special Weekly Event Banner -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-surface-container-highest via-surface-container-high to-surface-container-highest p-space-md shadow-lg">
+<div class="absolute -left-6 -bottom-6 w-32 h-32 rounded-full bg-candy-pink/15 blur-2xl pointer-events-none"></div>
+<div class="absolute right-0 top-0 bottom-0 w-28 opacity-10 bg-gradient-to-l from-candy-pink to-transparent pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-0.5 rounded-full bg-candy-pink/20 text-candy-pink font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">mode_fan</span> Spooky Mini-Season
+        </span>
+<div class="flex items-center gap-1 text-secondary bg-surface-container-lowest px-2 py-0.5 rounded-full shadow-inner">
+<span class="material-symbols-outlined text-[15px]">monetization_on</span>
+<span class="font-label-sm text-label-sm font-bold">+500 Bonus</span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-1.5">
+            Halloween Word Haunt
+            <span class="material-symbols-outlined text-secondary text-[20px]">cruelty_free</span>
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">7 unique eerie puzzles with rare collectible badge.</p>
+</div>
+<button class="flex-shrink-0 px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-[0_4px_14px_rgba(16,185,129,0.35)] active:translate-y-0.5 transition-all flex items-center gap-1" type="button">
+<span>Enter</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Month Selector & Calendar Hub Section -->
+<div class="flex flex-col gap-space-sm">
+<!-- Month Header & Interactive Filter Bar -->
+<div class="flex items-center justify-between bg-surface-container-high px-space-md py-space-sm rounded-xl">
+<button aria-label="Previous month" class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<div class="flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-wide flex items-center gap-1">
+          October 2024
+        </span>
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">21/31 Days Mastered</span>
+</div>
+<button aria-label="Next month" class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+<!-- Calendar Legend Pill Row -->
+<div class="flex items-center justify-around px-space-xs py-1 text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-tile-correct"></span>
+<span class="font-label-sm text-label-sm">Solved</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm">3-Guess Star</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container shadow-[0_0_8px_rgba(150,153,255,0.6)]"></span>
+<span class="font-label-sm text-label-sm">Today</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></span>
+<span class="font-label-sm text-label-sm">Locked</span>
+</div>
+</div>
+<!-- Calendar Days of Week Header -->
+<div class="grid grid-cols-7 gap-1 text-center font-label-sm text-label-sm text-on-surface-variant pt-1">
+<div>M</div>
+<div>T</div>
+<div>W</div>
+<div>T</div>
+<div>F</div>
+<div>S</div>
+<div>S</div>
+</div>
+<!-- Calendar 7x5 Grid -->
+<div class="grid grid-cols-7 gap-1.5 p-space-xs rounded-xl bg-surface-container-low shadow-inner">
+<!-- Prior Month Bleed -->
+<div class="aspect-square rounded-lg bg-surface-container-lowest/60 flex items-center justify-center opacity-30">
+<span class="font-label-sm text-label-sm text-on-surface-variant">29</span>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest/60 flex items-center justify-center opacity-30">
+<span class="font-label-sm text-label-sm text-on-surface-variant">30</span>
+</div>
+<!-- Solved Days (1 to 5) -->
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_3px_8px_rgba(16,185,129,0.25)] active:scale-95 transition-transform" type="button">
+<span class="font-label-md text-label-md font-bold leading-none">1</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_3px_8px_rgba(16,185,129,0.25)] active:scale-95 transition-transform" type="button">
+<span class="font-label-md text-label-md font-bold leading-none">2</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<!-- Solved with Perfect 3-Guess Star Day 3 -->
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_4px_12px_rgba(16,185,129,0.3)] active:scale-95 transition-transform overflow-hidden" type="button">
+<div class="absolute -top-1 -right-1 w-4 h-4 bg-secondary rounded-full flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-surface text-[11px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-md text-label-md font-bold leading-none">3</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_3px_8px_rgba(16,185,129,0.25)] active:scale-95 transition-transform" type="button">
+<span class="font-label-md text-label-md font-bold leading-none">4</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_3px_8px_rgba(16,185,129,0.25)] active:scale-95 transition-transform" type="button">
+<span class="font-label-md text-label-md font-bold leading-none">5</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<!-- Week 2: 6 to 12 -->
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_3px_8px_rgba(16,185,129,0.25)] active:scale-95 transition-transform" type="button">
+<span class="font-label-md text-label-md font-bold leading-none">6</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_4px_12px_rgba(16,185,129,0.3)] active:scale-95 transition-transform overflow-hidden" type="button">
+<div class="absolute -top-1 -right-1 w-4 h-4 bg-secondary rounded-full flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-surface text-[11px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-md text-label-md font-bold leading-none">7</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_3px_8px_rgba(16,185,129,0.25)] active:scale-95 transition-transform" type="button">
+<span class="font-label-md text-label-md font-bold leading-none">8</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_3px_8px_rgba(16,185,129,0.25)] active:scale-95 transition-transform" type="button">
+<span class="font-label-md text-label-md font-bold leading-none">9</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_3px_8px_rgba(16,185,129,0.25)] active:scale-95 transition-transform" type="button">
+<span class="font-label-md text-label-md font-bold leading-none">10</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_4px_12px_rgba(16,185,129,0.3)] active:scale-95 transition-transform overflow-hidden" type="button">
+<div class="absolute -top-1 -right-1 w-4 h-4 bg-secondary rounded-full flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-surface text-[11px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-md text-label-md font-bold leading-none">11</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_3px_8px_rgba(16,185,129,0.25)] active:scale-95 transition-transform" type="button">
+<span class="font-label-md text-label-md font-bold leading-none">12</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<!-- Week 3: 13 to 19 -->
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_3px_8px_rgba(16,185,129,0.25)] active:scale-95 transition-transform" type="button">
+<span class="font-label-md text-label-md font-bold leading-none">13</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_3px_8px_rgba(16,185,129,0.25)] active:scale-95 transition-transform" type="button">
+<span class="font-label-md text-label-md font-bold leading-none">14</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_4px_12px_rgba(16,185,129,0.3)] active:scale-95 transition-transform overflow-hidden" type="button">
+<div class="absolute -top-1 -right-1 w-4 h-4 bg-secondary rounded-full flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-surface text-[11px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-md text-label-md font-bold leading-none">15</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_3px_8px_rgba(16,185,129,0.25)] active:scale-95 transition-transform" type="button">
+<span class="font-label-md text-label-md font-bold leading-none">16</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_3px_8px_rgba(16,185,129,0.25)] active:scale-95 transition-transform" type="button">
+<span class="font-label-md text-label-md font-bold leading-none">17</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_4px_12px_rgba(16,185,129,0.3)] active:scale-95 transition-transform overflow-hidden" type="button">
+<div class="absolute -top-1 -right-1 w-4 h-4 bg-secondary rounded-full flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-surface text-[11px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-md text-label-md font-bold leading-none">18</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_3px_8px_rgba(16,185,129,0.25)] active:scale-95 transition-transform" type="button">
+<span class="font-label-md text-label-md font-bold leading-none">19</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<!-- Week 4: 20 to 26 -->
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_3px_8px_rgba(16,185,129,0.25)] active:scale-95 transition-transform" type="button">
+<span class="font-label-md text-label-md font-bold leading-none">20</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<button class="aspect-square rounded-lg bg-tile-correct text-on-primary flex flex-col items-center justify-center relative shadow-[0_4px_12px_rgba(16,185,129,0.3)] active:scale-95 transition-transform overflow-hidden" type="button">
+<div class="absolute -top-1 -right-1 w-4 h-4 bg-secondary rounded-full flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-surface text-[11px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-md text-label-md font-bold leading-none">21</span>
+<span class="material-symbols-outlined text-[13px] leading-none mt-0.5">check</span>
+</button>
+<!-- TODAY (Ready to Play! Glow State) -->
+<button class="aspect-square rounded-lg bg-tertiary-container text-on-tertiary-container flex flex-col items-center justify-center relative shadow-[0_0_18px_rgba(150,153,255,0.7)] animate-pulse active:scale-90 transition-transform" id="today-play-btn" type="button">
+<span class="font-label-md text-label-md font-extrabold leading-none">22</span>
+<span class="material-symbols-outlined text-[15px] leading-none mt-0.5">play_arrow</span>
+</button>
+<!-- Locked Future Dates (23 to 31) -->
+<div class="aspect-square rounded-lg bg-surface-container flex flex-col items-center justify-center opacity-65 text-on-surface-variant">
+<span class="font-label-md text-label-md leading-none">23</span>
+<span class="material-symbols-outlined text-[12px] leading-none mt-0.5">lock</span>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container flex flex-col items-center justify-center opacity-65 text-on-surface-variant">
+<span class="font-label-md text-label-md leading-none">24</span>
+<span class="material-symbols-outlined text-[12px] leading-none mt-0.5">lock</span>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container flex flex-col items-center justify-center opacity-65 text-on-surface-variant">
+<span class="font-label-md text-label-md leading-none">25</span>
+<span class="material-symbols-outlined text-[12px] leading-none mt-0.5">lock</span>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container flex flex-col items-center justify-center opacity-65 text-on-surface-variant">
+<span class="font-label-md text-label-md leading-none">26</span>
+<span class="material-symbols-outlined text-[12px] leading-none mt-0.5">lock</span>
+</div>
+<!-- Week 5: 27 to 31 + future bleeds -->
+<div class="aspect-square rounded-lg bg-surface-container flex flex-col items-center justify-center opacity-65 text-on-surface-variant">
+<span class="font-label-md text-label-md leading-none">27</span>
+<span class="material-symbols-outlined text-[12px] leading-none mt-0.5">lock</span>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container flex flex-col items-center justify-center opacity-65 text-on-surface-variant">
+<span class="font-label-md text-label-md leading-none">28</span>
+<span class="material-symbols-outlined text-[12px] leading-none mt-0.5">lock</span>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container flex flex-col items-center justify-center opacity-65 text-on-surface-variant">
+<span class="font-label-md text-label-md leading-none">29</span>
+<span class="material-symbols-outlined text-[12px] leading-none mt-0.5">lock</span>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container flex flex-col items-center justify-center opacity-65 text-on-surface-variant">
+<span class="font-label-md text-label-md leading-none">30</span>
+<span class="material-symbols-outlined text-[12px] leading-none mt-0.5">lock</span>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container flex flex-col items-center justify-center opacity-65 text-on-surface-variant">
+<span class="font-label-md text-label-md leading-none">31</span>
+<span class="material-symbols-outlined text-[12px] leading-none mt-0.5">lock</span>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest/60 flex items-center justify-center opacity-30">
+<span class="font-label-sm text-label-sm text-on-surface-variant">1</span>
+</div>
+<div class="aspect-square rounded-lg bg-surface-container-lowest/60 flex items-center justify-center opacity-30">
+<span class="font-label-sm text-label-sm text-on-surface-variant">2</span>
+</div>
+</div>
+</div>
+<!-- Today's Quick Play Tactical CTA Card -->
+<div class="rounded-xl bg-surface-container-high p-space-md flex items-center justify-between shadow-lg relative overflow-hidden">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-xl bg-tertiary-container text-on-tertiary-container flex items-center justify-center flex-shrink-0 shadow-[0_0_14px_rgba(150,153,255,0.4)]">
+<span class="material-symbols-outlined text-[26px]">edit_calendar</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight truncate">Today's Daily #241</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Keep your 24-day streak alive!</span>
+</div>
+</div>
+<button class="flex-shrink-0 px-space-lg py-3 rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm shadow-[0_4px_16px_rgba(16,185,129,0.4)] active:scale-95 transition-all flex items-center gap-1.5" type="button">
+<span>Play</span>
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</button>
+</div>
+<!-- Daily Puzzle Archives & Modes Section -->
+<div class="flex flex-col gap-space-sm pb-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Archive Modes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Replay past themes &amp; custom difficulties</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold">3 Modes</span>
+</div>
+<!-- Mode Filter Card Stack -->
+<div class="flex flex-col gap-space-sm">
+<!-- Classic 5-Letter Card -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between group cursor-pointer shadow-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-xl bg-primary/15 text-primary flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">spellcheck</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-extrabold truncate">Classic 5-Letter</span>
+<span class="px-1.5 py-0.5 rounded bg-primary/20 text-primary font-label-sm text-label-sm">Standard</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Unlimited historical archive catalog</span>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">342 Solved</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] group-hover:text-primary transition-colors">chevron_right</span>
+</div>
+</div>
+<!-- Hardcore 6-Letter Card -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between group cursor-pointer shadow-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-xl bg-candy-pink/15 text-candy-pink flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">psychology</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-extrabold truncate">Hardcore 6-Letter</span>
+<span class="px-1.5 py-0.5 rounded bg-candy-pink/20 text-candy-pink font-label-sm text-label-sm">Hard</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Strict dictionary rules with rare vocabulary</span>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">88 Solved</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] group-hover:text-candy-pink transition-colors">chevron_right</span>
+</div>
+</div>
+<!-- Speed Rush (2 Min) Card -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between group cursor-pointer shadow-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-xl bg-secondary/15 text-secondary flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">timer</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-extrabold truncate">Speed Rush (2 Min)</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary/20 text-secondary font-label-sm text-label-sm">Time Trial</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Rapid anagram solving against the clock</span>
+</div>
+</div>
+<div class="flex items-center gap-2 flex-shrink-0">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Top: 18 wpm</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] group-hover:text-secondary transition-colors">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    // Dynamic countdown timer micro-interaction
+    let totalSeconds = 14 * 3600 + 28 * 60 + 40;
+    const timerEl = document.getElementById('chest-timer');
+    if (timerEl) {
+      setInterval(() => {
+        if (totalSeconds > 0) {
+          totalSeconds--;
+          const hours = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
+          const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+          const seconds = String(totalSeconds % 60).padStart(2, '0');
+          timerEl.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+      }, 1000);
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.4)]" data-active-classes="text-primary font-label-md scale-105"><div class="max-w-[480px] mx-auto flex justify-around items-center h-20 px-space-sm"><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] min-h-[48px] px-2 py-1 rounded-xl text-on-surface-variant transition-all hover:text-on-surface" data-path="play" href="#"><span class="material-symbols-outlined text-[24px]">sports_esports</span><span class="font-label-sm text-label-sm">Play</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[64px] min-h-[48px] px-2 py-1 rounded-xl transition-all text-primary font-label-md scale-105" data-path="daily" href="#"><span class="material-symbols-outlined text-[24px]">calendar_month</span><span class="font-label-sm text-label-sm">Daily</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] min-h-[48px] px-2 py-1 rounded-xl text-on-surface-variant transition-all hover:text-on-surface" data-path="ranks" href="#"><span class="material-symbols-outlined text-[24px]">emoji_events</span><span class="font-label-sm text-label-sm">Ranks</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] min-h-[48px] px-2 py-1 rounded-xl text-on-surface-variant transition-all hover:text-on-surface" data-path="shop" href="#"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="font-label-sm text-label-sm">Shop</span></a></div></nav></body></html>

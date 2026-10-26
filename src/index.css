@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #0b1326;
+  --color-surface-dim: #0b1326;
+  --color-surface-bright: #31394d;
+  --color-surface-container-lowest: #060e20;
+  --color-surface-container-low: #131b2e;
+  --color-surface-container: #171f33;
+  --color-surface-container-high: #222a3d;
+  --color-surface-container-highest: #2d3449;
+  --color-surface-card: #1E293B;
+  --color-surface-variant: #2d3449;
+  --color-surface-tint: #4edea3;
+
+  --color-background: #0b1326;
+  --color-on-background: #dae2fd;
+  --color-on-surface: #dae2fd;
+  --color-on-surface-variant: #bbcabf;
+  --color-inverse-surface: #dae2fd;
+  --color-inverse-on-surface: #283044;
+
+  --color-primary: #4edea3;
+  --color-on-primary: #003824;
+  --color-primary-container: #10b981;
+  --color-on-primary-container: #00422b;
+  --color-inverse-primary: #006c49;
+  --color-primary-fixed: #6ffbbe;
+  --color-primary-fixed-dim: #4edea3;
+  --color-on-primary-fixed: #002113;
+  --color-on-primary-fixed-variant: #005236;
+
+  --color-secondary: #ffb95f;
+  --color-on-secondary: #472a00;
+  --color-secondary-container: #ee9800;
+  --color-on-secondary-container: #5b3800;
+  --color-secondary-fixed: #ffddb8;
+  --color-secondary-fixed-dim: #ffb95f;
+  --color-on-secondary-fixed: #2a1700;
+  --color-on-secondary-fixed-variant: #653e00;
+
+  --color-tertiary: #c0c1ff;
+  --color-on-tertiary: #1000a9;
+  --color-tertiary-container: #9699ff;
+  --color-on-tertiary-container: #1d17b2;
+  --color-tertiary-fixed: #e1e0ff;
+  --color-tertiary-fixed-dim: #c0c1ff;
+  --color-on-tertiary-fixed: #07006c;
+  --color-on-tertiary-fixed-variant: #2f2ebe;
+
+  --color-outline: #86948a;
+  --color-outline-variant: #3c4a42;
+
+  --color-tile-correct: #10B981;
+  --color-tile-present: #F59E0B;
+  --color-tile-absent: #334155;
+  --color-tile-empty: #1E293B;
+  --color-tile-border: #475569;
+  --color-key-bg: #334155;
+  --color-glow-success: #34D399;
+  --color-candy-pink: #EC4899;
+
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-body-lg: 'Plus Jakarta Sans', sans-serif;
+  --font-body-md: 'Plus Jakarta Sans', sans-serif;
+  --font-body-sm: 'Plus Jakarta Sans', sans-serif;
+  --font-headline-lg: 'Plus Jakarta Sans', sans-serif;
+  --font-headline-md: 'Plus Jakarta Sans', sans-serif;
+  --font-headline-sm: 'Plus Jakarta Sans', sans-serif;
+  --font-label-md: 'Plus Jakarta Sans', sans-serif;
+  --font-label-sm: 'Plus Jakarta Sans', sans-serif;
+  --font-tile-letter: 'Plus Jakarta Sans', sans-serif;
+  --font-display-hero: 'Plus Jakarta Sans', sans-serif;
+  --font-keyboard-letter: 'Plus Jakarta Sans', sans-serif;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 0.75rem;
+  --spacing-space-lg: 1.25rem;
+  --spacing-space-xl: 2rem;
+  --spacing-margin: 1rem;
+  --spacing-gutter: 0.75rem;
+}
+
+@layer base {
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0b1326;
+    color: #dae2fd;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  body {
+    overscroll-behavior-y: none;
+    -webkit-font-smoothing: antialiased;
+  }
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  * {
+    scrollbar-width: none;
+  }
+}
+
+/* Material Symbols configuration */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography utility classes matching design */
+.font-headline-lg { font-size: 32px; line-height: 40px; letter-spacing: -0.01em; font-weight: 800; }
+.font-headline-md { font-size: 24px; line-height: 32px; font-weight: 700; }
+.font-headline-sm { font-size: 20px; line-height: 28px; font-weight: 700; }
+.font-body-lg { font-size: 18px; line-height: 26px; font-weight: 500; }
+.font-body-md { font-size: 15px; line-height: 22px; font-weight: 400; }
+.font-body-sm { font-size: 13px; line-height: 18px; font-weight: 500; }
+.font-label-md { font-size: 14px; line-height: 18px; letter-spacing: 0.05em; font-weight: 700; }
+.font-label-sm { font-size: 11px; line-height: 14px; letter-spacing: 0.08em; font-weight: 700; }
+.font-tile-letter { font-size: 32px; line-height: 32px; font-weight: 800; }
+.font-keyboard-letter { font-size: 16px; line-height: 20px; font-weight: 700; }
+
+.text-headline-lg { font-size: 32px; line-height: 40px; }
+.text-headline-md { font-size: 24px; line-height: 32px; }
+.text-headline-sm { font-size: 20px; line-height: 28px; }
+.text-body-lg { font-size: 18px; line-height: 26px; }
+.text-body-md { font-size: 15px; line-height: 22px; }
+.text-body-sm { font-size: 13px; line-height: 18px; }
+.text-label-md { font-size: 14px; line-height: 18px; }
+.text-label-sm { font-size: 11px; line-height: 14px; }
+.text-tile-letter { font-size: 32px; line-height: 32px; }
+
+/* Flip animation for tiles */
+@keyframes tilePop {
+  0% { transform: scale(0.9); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes tileFlipIn {
+  0% { transform: rotateX(0deg); }
+  50% { transform: rotateX(90deg); }
+  100% { transform: rotateX(0deg); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+@keyframes bounceWin {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-16px); }
+  60% { transform: translateY(-8px); }
+}
+
+.animate-tile-pop {
+  animation: tilePop 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.animate-tile-flip {
+  animation: tileFlipIn 0.5s ease;
+}
+
+.animate-shake {
+  animation: shake 0.45s ease-in-out;
+}
+
+.animate-win {
+  animation: bounceWin 0.8s ease;
+}

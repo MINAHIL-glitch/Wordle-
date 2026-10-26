@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#0b1326;color:#dae2fd;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-surface": "#dae2fd", "surface": "#0b1326", "primary-fixed-dim": "#4edea3", "background": "#0b1326", "surface-container-highest": "#2d3449", "on-primary-fixed-variant": "#005236", "on-tertiary-container": "#1d17b2", "on-error-container": "#ffdad6", "surface-variant": "#2d3449", "tertiary-fixed": "#e1e0ff", "tile-border": "#475569", "tile-absent": "#334155", "inverse-primary": "#006c49", "surface-container-high": "#222a3d", "primary-container": "#10b981", "on-primary": "#003824", "on-tertiary-fixed-variant": "#2f2ebe", "surface-container": "#171f33", "outline": "#86948a", "inverse-on-surface": "#283044", "on-surface": "#dae2fd", "tertiary": "#c0c1ff", "error": "#ffb4ab", "key-bg": "#334155", "secondary-fixed": "#ffddb8", "on-secondary-fixed-variant": "#653e00", "surface-container-lowest": "#060e20", "surface-dim": "#0b1326", "on-primary-fixed": "#002113", "surface-bright": "#31394d", "on-tertiary": "#1000a9", "tertiary-container": "#9699ff", "on-primary-container": "#00422b", "on-surface-variant": "#bbcabf", "on-error": "#690005", "surface-tint": "#4edea3", "tile-empty": "#1E293B", "tile-correct": "#10B981", "on-background": "#dae2fd", "surface-container-low": "#131b2e", "candy-pink": "#EC4899", "on-secondary": "#472a00", "secondary-container": "#ee9800", "glow-success": "#34D399", "primary": "#4edea3", "on-tertiary-fixed": "#07006c", "error-container": "#93000a", "primary-fixed": "#6ffbbe", "tertiary-fixed-dim": "#c0c1ff", "on-secondary-container": "#5b3800", "secondary-fixed-dim": "#ffb95f", "on-secondary-fixed": "#2a1700", "surface-card": "#1E293B", "outline-variant": "#3c4a42", "secondary": "#ffb95f", "tile-present": "#F59E0B" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-desktop": "2.5rem", "space-xs": "0.25rem", "space-lg": "1.25rem", "space-xl": "2rem", "margin": "1rem", "space-md": "0.75rem", "space-sm": "0.5rem", "gutter": "0.75rem" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "tile-letter": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"], "keyboard-letter": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["18px", { "lineHeight": "26px", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "label-md": ["14px", { "lineHeight": "18px", "letterSpacing": "0.05em", "fontWeight": "700" }], "tile-letter": ["32px", { "lineHeight": "32px", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "800" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "keyboard-letter": ["16px", { "lineHeight": "20px", "fontWeight": "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_4px_20px_rgba(0,0,0,0.3)]"><div class="h-16 px-space-md flex items-center justify-between gap-space-sm max-w-[480px] mx-auto"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="WordCraft Game Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf9hX5C0TK5W3q7AQrpo1IwCf-7h5mBu43X2nsH1S2tPaBVtTBuf-17-Lh-f-JMw_utcvMBf-FWNd1gaCzhk3fuGC8v8eu0jprndcwhuVnaYCKJiKNVT2rJe7p5MiEfdyQANc0k_pljA5gkbIsOs7ciQv-cpGl-FjQP9FBkb7siyXUJ9Y4Xz0NsPhC8zUSLF37kCX5ot-5-oZgfL-i7r6xUhQV3n3weHGuPspgxqs"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate leading-none">WordCraft</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate uppercase tracking-wider">Ranks</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><div class="flex items-center gap-1 bg-surface-container px-space-sm py-1 rounded-full shadow-[0_2px_8px_rgba(245,158,11,0.15)]"><span class="material-symbols-outlined text-secondary text-[18px]">local_fire_department</span><span class="font-label-md text-label-md text-secondary">7</span></div><div class="flex items-center gap-1 bg-surface-container-high px-space-sm py-1 rounded-full shadow-[0_0_10px_rgba(255,185,95,0.25)]"><span class="material-symbols-outlined text-secondary text-[18px]">monetization_on</span><span class="font-label-md text-label-md text-on-surface">480</span></div><div class="flex items-center justify-center p-0.5 rounded-full bg-surface-container-high shadow-[0_2px_8px_rgba(0,0,0,0.3)] ml-0.5"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeL9j3bg0vum77GjSsjPCeyNWMJIMKyAUJUOwUvmP7PhNsWjbakagKZpFdYGWbKCKwpxXIM4A4v3YGMAMPn4Xa3o7DmXpEjBWmG1tYjbHmwWiU598c0YWpZthgDmSyPVcwTCMLl8kVCHD6w0BDy6KBjh1Gp3MsfoHE76yN7PYcT9vSHutqG-onGvDRPHpnOzmbee-7_9hPzEadeKCGZy7PgQOVFOvHonT2a_G3-eQ"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface max-w-[480px] mx-auto"><div class="flex flex-col w-full px-space-md py-space-sm gap-space-md">
+<!-- Friends vs Global Segmented Control -->
+<div class="flex items-center justify-center p-1 rounded-full bg-surface-container-low shadow-inner">
+<button class="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-primary text-on-primary shadow-[0_2px_12px_rgba(78,222,163,0.3)]" id="tab-global" onclick="switchTab('global')">
+<span class="material-symbols-outlined text-[18px]">public</span>
+<span>Global League</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-1.5 py-2 rounded-full font-label-md text-label-md transition-all duration-200 text-on-surface-variant hover:text-on-surface" id="tab-friends" onclick="switchTab('friends')">
+<span class="material-symbols-outlined text-[18px]">group</span>
+<span>Friends (18)</span>
+</button>
+</div>
+<!-- Tier Banner: Diamond League Division II -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-surface-container-high via-surface-container to-surface-container-low p-space-md shadow-xl">
+<!-- Glowing background accent glow -->
+<div class="absolute -top-12 -right-12 w-36 h-36 bg-tertiary/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-8 -left-8 w-28 h-28 bg-primary/15 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<!-- Diamond Emblem -->
+<div class="relative flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-tr from-surface-container-highest via-tertiary-container/30 to-tertiary/40 shadow-[0_0_20px_rgba(192,193,255,0.35)]">
+<span class="material-symbols-outlined text-tertiary text-[32px]" style="font-variation-settings: 'FILL' 1;">diamond</span>
+<span class="absolute -bottom-1 -right-1 px-1.5 py-0.2 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-[10px] shadow">II</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Diamond League</h2>
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Division II • Tier 8 of 10</span>
+</div>
+</div>
+<!-- Weekly Countdown Timer Badge -->
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-highest text-secondary shadow-[0_0_8px_rgba(255,185,95,0.2)]">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span class="font-label-sm text-label-sm uppercase">1d 14h Left</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline mt-1 text-right">Weekly reset</span>
+</div>
+</div>
+<!-- League Rules Mini Bar -->
+<div class="mt-3.5 pt-3 flex items-center justify-between gap-2 text-on-surface-variant font-label-sm text-[11px] bg-surface-container-lowest/60 rounded-lg p-2.5">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+<span class="font-label-md text-label-sm">Top 5 Advance</span>
+<span class="text-on-surface-variant font-body-sm">to Master</span>
+</div>
+<div class="h-3 w-px bg-surface-container-highest"></div>
+<div class="flex items-center gap-1.5 text-error">
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+<span class="font-label-md text-label-sm">Bottom 5 Relegate</span>
+</div>
+</div>
+</div>
+<!-- Player Standing Pinned Banner (Hero Micro Card) -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-surface-card via-surface-container-high to-surface-card p-space-md shadow-[0_8px_24px_rgba(0,0,0,0.45)]">
+<!-- Neon promotion indicator bar -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-primary via-glow-success to-primary shadow-[0_0_10px_rgba(78,222,163,0.8)]"></div>
+<div class="flex items-center justify-between gap-space-sm pl-1">
+<div class="flex items-center gap-3">
+<!-- Current Rank Number -->
+<div class="flex flex-col items-center justify-center w-8 h-8 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-headline-sm leading-none shadow-[0_0_12px_rgba(16,185,129,0.4)]">
+          #4
+        </div>
+<!-- Avatar & Info -->
+<div class="relative">
+<img class="w-11 h-11 rounded-full object-cover shadow-[0_0_10px_rgba(78,222,163,0.3)]" data-alt="Cyberpunk gamer avatar portrait of WordWizard with neon green visor, glowing headphones, high tech styling against dark navy backdrop, 3D digital illustration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7up1qXAgAxkUhRdS4hB32ajB8Yfea9YSmOfxdYli0AXFou7l3YZR9y-vTZZ38SfNDF0HJsnHaNVQLi5avlOZ94vlDUqRnEccFgg92w7uaMI74Vv4KcgfcwwpnVriybGbacNdpk84oWmlO8rFtKCtnOv26BQHblBm3IaifAdP-YjptPE82SEgP7LNYfktNg_m49dgXKS5rpCM160anYLA-lFGg0Uy_K0b76BpkhtSoo636Ev8t5nCL"/>
+<span class="absolute -bottom-1 -right-1 px-1 rounded-full bg-surface-container text-[10px]">👑</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">WordWizard</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest font-label-sm text-[10px] text-primary">YOU</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-body-sm text-body-sm text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_drop_up</span> Promotion Zone
+            </span>
+</div>
+</div>
+</div>
+<!-- Trophies & Coin preview -->
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 text-secondary font-headline-sm text-headline-sm leading-tight">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span>1,840</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-[11px] text-secondary-fixed bg-secondary-container/20 px-2 py-0.5 rounded-full mt-1">
+<span>Reward:</span>
+<span class="text-secondary font-label-md">+150</span>
+<span class="material-symbols-outlined text-[13px] text-secondary">monetization_on</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Top 3 Podium Showcase -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Top Performers</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span> High Intensity
+      </span>
+</div>
+<!-- 3-Column Podium Grid -->
+<div class="grid grid-cols-3 gap-2 items-end pt-5 pb-1">
+<!-- Rank 2: Silver -->
+<div class="flex flex-col items-center">
+<!-- Floating Laurel / Crown -->
+<span class="material-symbols-outlined text-outline text-[22px] mb-1">workspace_premium</span>
+<!-- Avatar -->
+<div class="relative -mb-3 z-10">
+<img class="w-14 h-14 rounded-full object-cover shadow-[0_4px_16px_rgba(134,148,138,0.35)]" data-alt="Portrait avatar of a female puzzle champion LexiQuest with sleek holographic silver hair, focused expression, futuristic minimalist dark background, rich lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdJjcIamms3fRk_p8At3B4o9g_ru36GT7uHgaxu5i_HBwPmiSdam5gUbObowBCS1Z75tvZhUupJEyiwOYsvxDUjnKWySGV3XvMMNfn-DO_unIw9LvlqUXed_QNMTvhp4zSOpfpQOeSQVcKkMPbIQbG5j_L5CpQO92-1LkwiDDWZP_xTW0Nl93F0r8dRl83tve1ZuwzgaFl5ZnwT36OqwKSvllfMyV1J73azkITKo17K_03xWhv12JG"/>
+<span class="absolute -bottom-1 -right-1 flex items-center justify-center w-5 h-5 rounded-full bg-outline text-surface font-label-sm text-[11px] font-bold shadow">
+            2
+          </span>
+</div>
+<!-- Pillar Card -->
+<div class="w-full pt-5 pb-3 px-1.5 flex flex-col items-center bg-surface-container rounded-t-xl rounded-b-lg shadow-md text-center">
+<span class="font-headline-sm text-[13px] text-on-surface truncate w-full">LexiQuest</span>
+<div class="flex items-center gap-0.5 text-secondary font-label-md text-[13px] mt-0.5">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span>2,045</span>
+</div>
+<span class="font-label-sm text-[10px] text-on-surface-variant flex items-center gap-0.5 mt-1 bg-surface-container-high px-1.5 py-0.5 rounded-full">
+            🔥 11 Streak
+          </span>
+</div>
+</div>
+<!-- Rank 1: Gold Champion (Taller) -->
+<div class="flex flex-col items-center">
+<!-- Laurel Gold -->
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-secondary text-[28px] animate-pulse" style="font-variation-settings: 'FILL' 1;">crown</span>
+</div>
+<!-- Avatar with Gold Glow -->
+<div class="relative -mb-3.5 z-10">
+<img class="w-18 h-18 rounded-full object-cover shadow-[0_0_24px_rgba(255,185,95,0.55)]" data-alt="Portrait avatar of Grandmaster SpellCraft wearing golden laurel circlet, confident smile, amber glowing aura, epic high resolution esports game avatar profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfgCkGp5Ps1p3rJ_Y-TSvs4VyAExaWfB0CRBQiNqhS6Nrdoc-KTNc2DpDKK2xF5XfDUdZB7EOyZMokyWYkqv52Ywa4mECJynE8XRbEfSSLUubq_HMrXn8eFQtjYdUKhFX3H15z27IzEOiVmIYgVghktjHvdQvHCaeLPUTsatf6RuSI7PuJVACJMgNDWdycvrLwSOJiAyPuKfjVFif80HIj_KqHyyWBL5IsEYZvFD1PigJBEzk0H_bF"/>
+<span class="absolute -bottom-1 -right-1 flex items-center justify-center w-6 h-6 rounded-full bg-secondary text-on-secondary font-label-md text-[12px] font-extrabold shadow-lg">
+            1
+          </span>
+</div>
+<!-- Pillar Card Highest -->
+<div class="w-full pt-6 pb-4 px-1.5 flex flex-col items-center bg-gradient-to-b from-surface-container-high to-surface-container rounded-t-2xl rounded-b-lg shadow-xl text-center">
+<span class="font-headline-sm text-headline-sm text-secondary truncate w-full leading-tight">SpellCraft</span>
+<div class="flex items-center gap-0.5 text-secondary font-headline-sm text-headline-sm mt-0.5">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span>2,280</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-secondary-container bg-secondary/20 px-2 py-0.5 rounded-full mt-1.5 font-bold">
+            +300 🪙 Rank 1
+          </span>
+</div>
+</div>
+<!-- Rank 3: Bronze -->
+<div class="flex flex-col items-center">
+<!-- Laurel Bronze -->
+<span class="material-symbols-outlined text-secondary-container text-[22px] mb-1">military_tech</span>
+<!-- Avatar -->
+<div class="relative -mb-3 z-10">
+<img class="w-14 h-14 rounded-full object-cover shadow-[0_4px_16px_rgba(238,152,0,0.3)]" data-alt="Portrait avatar of male puzzle tactician GridMaster with warm bronze ambient lighting, stylish glasses, deep blue shadows, 3D character digital render" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz_rxb84JrsBgM5befN0T1CjZKjq6RmI8psCGBTmalhlpL-oqLDpgjyVbvMIDzA0EjuNDMRykSkcp_2ZdITlaT-T1DscHxHPGKVRgaM6lTJpvUGhOwo38fLin54ivbvz92WYxrPNCnzbAhKI5zMx9fDQWj-F6KriB7NrzmYFTwFT82Oo544wEhRqPcfKT-FLzQCqPX41vx1B7DwGi21E10BogWdWTX6r-CiOBUVjTTsTk9EFSypSc0"/>
+<span class="absolute -bottom-1 -right-1 flex items-center justify-center w-5 h-5 rounded-full bg-secondary-container text-on-secondary font-label-sm text-[11px] font-bold shadow">
+            3
+          </span>
+</div>
+<!-- Pillar Card -->
+<div class="w-full pt-5 pb-3 px-1.5 flex flex-col items-center bg-surface-container rounded-t-xl rounded-b-lg shadow-md text-center">
+<span class="font-headline-sm text-[13px] text-on-surface truncate w-full">GridMaster</span>
+<div class="flex items-center gap-0.5 text-secondary font-label-md text-[13px] mt-0.5">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span>1,960</span>
+</div>
+<span class="font-label-sm text-[10px] text-on-surface-variant flex items-center gap-0.5 mt-1 bg-surface-container-high px-1.5 py-0.5 rounded-full">
+            🔥 8 Streak
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Promotion Cutoff Indicator -->
+<div class="relative flex items-center justify-center my-0.5 py-2">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent shadow-[0_0_12px_rgba(78,222,163,0.8)]"></div>
+</div>
+<div class="relative flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm shadow-md">
+<span class="material-symbols-outlined text-[15px]">keyboard_double_arrow_up</span>
+<span class="uppercase tracking-wider">Promotion Threshold • Top 5 Advance</span>
+</div>
+</div>
+<!-- League Ranks List (Ranks 4-15) -->
+<div class="flex flex-col gap-2">
+<!-- Rank 4 (You - Expanded Row) -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-high shadow-[0_4px_16px_rgba(16,185,129,0.2)]">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="flex items-center justify-center w-7 h-7 rounded-lg bg-primary text-on-primary font-label-md text-label-md">4</span>
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Cyberpunk gamer avatar portrait of WordWizard with glowing green visor and dark aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC6ZaHRl3mr5YEuMd5tWpfcSsvhq1n6h0rfVhH3iwVAyeEX3qRyo9mlPm_M9TMmGdux1Dgo2lSxP_0Her2vpj8Ykx0IiHjWvLYg-1GPCVJTqx3QFqxVKNFDAktKM_ufwOxcdoMmS_YIizR83E2L_XMroxtLMj6bESbjhdzivCy2v4kLyMPqz070YgJOKt5CBQ0AJzmvwfdh0lzY54286x79qC81qpL5VUoErnr9psZutbx7U6GAQyt"/>
+<span class="absolute -bottom-0.5 -right-0.5 text-[11px]">🇺🇸</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-[15px] text-primary font-bold truncate">WordWizard</span>
+<span class="px-1 py-0.2 rounded bg-primary/20 text-primary font-label-sm text-[9px]">YOU</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-[12px]">
+<span class="text-secondary font-label-sm">🔥 7 Win Streak</span>
+<span>•</span>
+<span class="text-primary font-label-sm">+38 pts today</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 pl-2">
+<span class="font-headline-sm text-[16px] text-on-surface font-extrabold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+          1,840
+        </span>
+<span class="font-label-sm text-[10px] text-primary">In Master Zone</span>
+</div>
+</div>
+<!-- Rank 5 (Cutoff edge) -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="flex items-center justify-center w-7 h-7 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md">5</span>
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait avatar of AlphaVowel, a male gamer with headphones and neon turquoise highlights on dark navy background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY6Uqi-9CByy-kdWI2uyVtFPsFGPTUuTwEDIkPhNPv-G9ugftjkzwU7RH-fs34zTLiqwGqUiIn8SEEsCyRvF7NUXRXpSF4zqWm4hw26VA1t0Dbq2P-BlbZUfrBxMfT-FGF3YMZgBcWjIoOHKnnBIrqEy7OW-kCIBjNOsZsz9YVNtQbqtkg2ebVJDhb27ADCyLoXtqOinyjz8T1Ph6UoZ1Wmrb5f8UdEmjb8iiyyoBv5eTpDyav20ys"/>
+<span class="absolute -bottom-0.5 -right-0.5 text-[11px]">🇨🇦</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[15px] text-on-surface truncate">AlphaVowel</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">🔥 6 Win Streak</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 pl-2">
+<span class="font-headline-sm text-[15px] text-on-surface font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+          1,795
+        </span>
+<span class="font-label-sm text-[10px] text-primary">Master Zone Cutoff</span>
+</div>
+</div>
+<!-- Demotion/Safe Divider Notice -->
+<div class="flex items-center justify-center py-1">
+<span class="font-label-sm text-[11px] text-outline uppercase tracking-wider bg-surface-container-lowest px-3 py-0.5 rounded-full">
+        Safe Zone (Ranks 6 - 20)
+      </span>
+</div>
+<!-- Rank 6 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="flex items-center justify-center w-7 h-7 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md">6</span>
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait avatar of RuneSeeker, vibrant purple haired anime style girl with glowing eyes, gaming portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO-pUqdYcksZdUXC71NQnfNWrq3ECXfwajC8gVu5TI98isPDWopZqr8WGL0IcsE8Q_ibWZygywLz51sPg-XhD6q8LGOPO9YZPVYpYuQ6ShlMpQK1kiTRdK3pO6Hdu808Jn4YMNKzvULM9L-ecmdaYx7oBttkZR2rsBaYsKDlX4EcjovNDTufsIEslNxU3Ew-BkERmKg4XFHx01uBpUTV2YY4e6M9r-OVLRGox3d2X58iejkAYu78Mg"/>
+<span class="absolute -bottom-0.5 -right-0.5 text-[11px]">🇬🇧</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[15px] text-on-surface truncate">RuneSeeker</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">🔥 4 Win Streak</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 pl-2">
+<span class="font-headline-sm text-[15px] text-on-surface font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+          1,740
+        </span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">-55 to Advance</span>
+</div>
+</div>
+<!-- Rank 7 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="flex items-center justify-center w-7 h-7 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md">7</span>
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait avatar of AnagramHero, handsome male with neon green glasses and casual hoodie, dark gaming room studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX2KJK4klIO2BMVtNfrJu84OgPoVkSX3djVQv0qKg0RJ0Cs-8f_FOgzwe-Kmcy2gQhmepfYJFclPYWkWKKofPKooxnOYuCM7aiG3yww_pe8ivzumG8V38HAHkxQBrgQaQakARN9HrDPWOYn0QunT_mom_Z4Zduf6dBbNuxrHutYwg93RbO9hUyHwBpY4mY1tS3hzsF7EIXOrnAyC1Kfvo2iFZsYM6eZxTiGx8RvM68S-sebNQSn5kJ"/>
+<span class="absolute -bottom-0.5 -right-0.5 text-[11px]">🇩🇪</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[15px] text-on-surface truncate">AnagramHero</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">🔥 5 Win Streak</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 pl-2">
+<span class="font-headline-sm text-[15px] text-on-surface font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+          1,712
+        </span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Maintained</span>
+</div>
+</div>
+<!-- Rank 8 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="flex items-center justify-center w-7 h-7 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md">8</span>
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait avatar of PuzzleKitten, playful futuristic cat-eared gamer persona with candy pink highlights and dark aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn7PCS2M0cAKNESKiQ-RvjE59R4bCT4C8zVqJUIIUYbB3X3krJrqA2ljDFDwTYTZdkTnylliVvwSniTZFlah4kl4G6ewl2YwP-rgIhqrWQvGsSWLO1Er7IEGxdcfFqkJsKa7ew5yRRa7kj-IpxqqWbLtee-Kb0TzhELfXkuudMwy4DXBDZMPr-Y_e6eqNYgGrxJRHzkeWasg2dDAxSL-eQTbPM36R3GGBDQU7ThbP7suivi2KXJw90"/>
+<span class="absolute -bottom-0.5 -right-0.5 text-[11px]">🇯🇵</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[15px] text-on-surface truncate">PuzzleKitten</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">🔥 3 Win Streak</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 pl-2">
+<span class="font-headline-sm text-[15px] text-on-surface font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+          1,685
+        </span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Maintained</span>
+</div>
+</div>
+<!-- Rank 9 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="flex items-center justify-center w-7 h-7 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md">9</span>
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait avatar of LexicalBeast, bearded gamer guy with cool cyan headphones and dramatic side illumination" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBYOOAxjjpmKNDPwL_YmVZVvsVu40OA9qV2M0ScT7UDYSQdkC3PG14YvXbOHt0fV7o4fr26JzTVfECVC3nE3d3IMdYv4pYA8C9rZ0gDmdyzydKb9-bwenBdk63rOZmLoMvKwAsoJJJwoo1rr0x1P7ZCS22ZEEz-IbTKRV0l0VrgkY_hfF0TGG6p9yaWX83gwNpi5DynXbddS7z0vcmT3uuGrlEki4C2Z3FDIhkOrDycPPVXgUXPIw4"/>
+<span class="absolute -bottom-0.5 -right-0.5 text-[11px]">🇦🇺</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[15px] text-on-surface truncate">LexicalBeast</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">🔥 2 Win Streak</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 pl-2">
+<span class="font-headline-sm text-[15px] text-on-surface font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+          1,640
+        </span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Maintained</span>
+</div>
+</div>
+<!-- Rank 10 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="flex items-center justify-center w-7 h-7 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md">10</span>
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait avatar of NovaSynapse, glowing cybernetic android avatar with violet lighting in dark room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp8vwwEQzbu2eW2e4qXrx8zZtQg6-qeHWqw_bkeMBXNluO4YkeaoYb5CZ_7OOEVzEu5cfOkZsHAl38JNfYSNJfJWZ_ac0Of8cTZpWXxXb2tPrZYiiJLLL4E9Be2HczJzhEsTKjL4a5wg7Bel_hMdCvllm2zxK04SSXmKorA1FnkBvzKVzsD0EVku-OqVguU9Zzv3FCynwTyYWkVRjjZ-5-twqzzRc-U4RWtt4pggADHZoKHgBeJms9"/>
+<span class="absolute -bottom-0.5 -right-0.5 text-[11px]">🇫🇷</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[15px] text-on-surface truncate">NovaSynapse</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">🔥 4 Win Streak</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 pl-2">
+<span class="font-headline-sm text-[15px] text-on-surface font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+          1,610
+        </span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Maintained</span>
+</div>
+</div>
+<!-- Rank 11 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="flex items-center justify-center w-7 h-7 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md">11</span>
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait avatar of WordTitan, strong fantasy warrior face with glowing runes on skin, esports illustration" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtSL5a3uQmswt0YPcb4A21P_KEcRE05sRQeGC2S8QS9r6n_6UC5HSaMao_djj62P3PwFwNhlMLExXEksArfeogfNYq6UDhIUp166-enqeu0AVOAdWg2JO-VWYgROfeBs2MBURdpsFTucRlBjRpnqCKmH9kOWmjkhPA06A1QZ387cTnZMsFSDuID92yX8Tq5visJJMUGvB8IqxTI3eJOdVPOiZ6UMUnISWvkEpaIa1FIJ3ICuK5cFqs"/>
+<span class="absolute -bottom-0.5 -right-0.5 text-[11px]">🇧🇷</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[15px] text-on-surface truncate">WordTitan</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">🔥 3 Win Streak</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 pl-2">
+<span class="font-headline-sm text-[15px] text-on-surface font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+          1,580
+        </span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Maintained</span>
+</div>
+</div>
+<!-- Rank 12 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="flex items-center justify-center w-7 h-7 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md">12</span>
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait avatar of VowelQueen, chic female gamer with neon green ponytail and stylish streetwear hoodie" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkGoZwNMZ4oYLHhV3RxY6cnj1AVTJnHmRqI3f-a6xw40tS1fAEnEuyU2uPJMrxqik7DaZoahNTXSanpzV9YehM8xyxsxetR29PC1d3dHMaj84tvFixn-Ptj9fc_o4H_mR89cK820pWqE-pGqL7CyPsJWRs6QLD1vQcXPDUBgw99zzsuxvfualQnLiLS8btizdFGJ_-23skRKpEWAZmYgVa-g7JMZpni038jymJVkQPABw7qEGQDFo9"/>
+<span class="absolute -bottom-0.5 -right-0.5 text-[11px]">🇸🇪</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[15px] text-on-surface truncate">VowelQueen</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">🔥 1 Win Streak</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 pl-2">
+<span class="font-headline-sm text-[15px] text-on-surface font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+          1,540
+        </span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Maintained</span>
+</div>
+</div>
+<!-- Rank 13 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="flex items-center justify-center w-7 h-7 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md">13</span>
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait avatar of CrosswordAce, studious young gamer with retro tech goggles and ambient amber lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4ZW-ZGTwqs2VHda2waIpg9QwlLEcLP3FrszgGiGsWV8qV9jfGK8Rm6el6LawCB4MoBiQ6fovbZL1qykB8RbBP2Y-S2mBq_3E8CmAuS5hMyXHqe_2QfrMyUa5Cgw6j9dJcKUbmVI6YRFzpoiiR934H6EG_z1i7TzT20YewSJmtpmY2ZQB9KFXzy834DzwFh2P_9Gpsneslr9gi-H6xoE_6ZlBGjuR_QuyDFIaKEHfg5jt77MhBhjjN"/>
+<span class="absolute -bottom-0.5 -right-0.5 text-[11px]">🇪🇸</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[15px] text-on-surface truncate">CrosswordAce</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">🔥 2 Win Streak</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 pl-2">
+<span class="font-headline-sm text-[15px] text-on-surface font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+          1,515
+        </span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Maintained</span>
+</div>
+</div>
+<!-- Rank 14 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="flex items-center justify-center w-7 h-7 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md">14</span>
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait avatar of CrypticSolver, mysterious dark hooded gamer avatar with glowing amber eye reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaR2bjAgGi5lhbbYhwA5T1nG5PgcsVA03khwTp2RmmSdH_smLpJ-ewSI8dTkAuYsjijBL_mtmmDmxpy9CE07rJ-fb0GO48oRqspfGy9cv1z0XrTcSTeDtIM15f4UvdW9baHzxGOLMhKnaXx0Gn8M3TVzJ1zV9ChJ8BvxNzwowcTSsqdaHiWTDR_IzlMJM3P4fMLmViQdDBiiYsP7c9M8VZYibH3cUu8-9mMD2Pm1nQY0ywXw7OwzBm"/>
+<span class="absolute -bottom-0.5 -right-0.5 text-[11px]">🇰🇷</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[15px] text-on-surface truncate">CrypticSolver</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">🔥 1 Win Streak</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 pl-2">
+<span class="font-headline-sm text-[15px] text-on-surface font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+          1,490
+        </span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Maintained</span>
+</div>
+</div>
+<!-- Rank 15 -->
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="flex items-center justify-center w-7 h-7 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md">15</span>
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Portrait avatar of SynonymSam, smiling casual player with colorful knit beanie and cool headphones, dark navy atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE-Va2NtM6V4G3nmIfCfhmiKDyJ9B6PthsP3iaNwf71fSHrW1sHUrcwbw0xikRGhyVXhw64DQZbIVj9orz6ls2PgdHxafZ5omXz50ZzuCpPPMach_jtic7SDLBr0DdE88STYIP3hQNjzjSOKfwXB-86Cgvsf6cJF5YYOKu2mx7lsJyeMlR_2vq9hAatvu4hwZqsl5m79O4uwaOR1o8RUm5sA8DafL_GXFhU9Cl3jJXUia5fZqq8h2q"/>
+<span class="absolute -bottom-0.5 -right-0.5 text-[11px]">🇮🇹</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[15px] text-on-surface truncate">SynonymSam</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">🔥 0 Win Streak</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 pl-2">
+<span class="font-headline-sm text-[15px] text-on-surface font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+          1,460
+        </span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Maintained</span>
+</div>
+</div>
+</div>
+<!-- Relegation Warning Footer Card -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low shadow-sm mt-1">
+<div class="flex items-center gap-2.5">
+<div class="flex items-center justify-center w-8 h-8 rounded-lg bg-error-container/40 text-error">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Demotion Zone starts at Rank 26</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Stay above 1,320 points to avoid Gold League</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-bright active:scale-95 transition-all">
+      Details
+    </button>
+</div>
+<!-- Quick Play Action Callout -->
+<div class="sticky bottom-2 z-20 pt-2 pb-1">
+<button class="w-full flex items-center justify-center gap-2 py-3.5 px-space-md rounded-xl bg-gradient-to-r from-primary-container via-glow-success to-primary-container text-on-primary-container font-headline-sm text-headline-sm shadow-[0_8px_24px_rgba(16,185,129,0.45)] active:scale-95 transition-transform" onclick="playMatch()">
+<span class="material-symbols-outlined text-[24px]">sports_esports</span>
+<span>Play Word Duel (+45 Trophies)</span>
+</button>
+</div>
+</div>
+<script>
+  function switchTab(type) {
+    const globalBtn = document.getElementById('tab-global');
+    const friendsBtn = document.getElementById('tab-friends');
+    if (!globalBtn || !friendsBtn) return;
+
+    if (type === 'global') {
+      globalBtn.className = "flex-1 flex items-center justify-center gap-1.5 py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-primary text-on-primary shadow-[0_2px_12px_rgba(78,222,163,0.3)]";
+      friendsBtn.className = "flex-1 flex items-center justify-center gap-1.5 py-2 rounded-full font-label-md text-label-md transition-all duration-200 text-on-surface-variant hover:text-on-surface";
+    } else {
+      friendsBtn.className = "flex-1 flex items-center justify-center gap-1.5 py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-primary text-on-primary shadow-[0_2px_12px_rgba(78,222,163,0.3)]";
+      globalBtn.className = "flex-1 flex items-center justify-center gap-1.5 py-2 rounded-full font-label-md text-label-md transition-all duration-200 text-on-surface-variant hover:text-on-surface";
+    }
+  }
+
+  function playMatch() {
+    // Quick haptic feedback trigger / sound cue mock
+    if (window.navigator && window.navigator.vibrate) {
+      window.navigator.vibrate(25);
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.4)]" data-active-classes="text-primary font-label-md scale-105"><div class="max-w-[480px] mx-auto flex justify-around items-center h-20 px-space-sm"><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] min-h-[48px] px-2 py-1 rounded-xl text-on-surface-variant transition-all hover:text-on-surface" data-path="play" href="#"><span class="material-symbols-outlined text-[24px]">sports_esports</span><span class="font-label-sm text-label-sm">Play</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] min-h-[48px] px-2 py-1 rounded-xl text-on-surface-variant transition-all hover:text-on-surface" data-path="daily" href="#"><span class="material-symbols-outlined text-[24px]">calendar_month</span><span class="font-label-sm text-label-sm">Daily</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[64px] min-h-[48px] px-2 py-1 rounded-xl transition-all text-primary font-label-md scale-105" data-path="ranks" href="#"><span class="material-symbols-outlined text-[24px]">emoji_events</span><span class="font-label-sm text-label-sm">Ranks</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[64px] min-h-[48px] px-2 py-1 rounded-xl text-on-surface-variant transition-all hover:text-on-surface" data-path="shop" href="#"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="font-label-sm text-label-sm">Shop</span></a></div></nav></body></html>
